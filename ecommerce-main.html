@@ -57,6 +57,48 @@
             pointer-events: none;
             transition:0.5s;
         }
+        .login-box .user-box input:focus~label,
+        .login-box .user-box input:valid~label {
+            top: -20px;
+            left: 0;
+            color: #03f484;
+            font-size: 12px;
+        }
+        
+        .login-box form a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #03f484;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+        }
+        
+        .login-box a:hover {
+            background: #03f484;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #08512f, 0 0 25px #126680, 0 0 50px #195666, 0 0 100px #0f3371;
+        }
+        
+        .login-box a span {
+            position: absolute;
+            display: block;
+        }
+        
+        .login-box a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03f484);
+            animation: btn-anim1 1s linear infinite;
+        }
      </style>
 </head>
 <body>
